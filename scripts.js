@@ -24,31 +24,31 @@ Depois de criada a lista:
 const students = [
 {
     name: "Vinicius",
-    nota1: 5,
-    nota2: 6
+    score1: 5,
+    score2: 6
 },
 {
     name: "Wagner",
-    nota1: 4,
-    nota2: 7
+    score1: 4,
+    score2: 7
 },
 {
     name: "Marilia",
-    nota1: 6,
-    nota2: 6
+    score1: 6,
+    score2: 6
 },
 {
     name: "Francisco",
-    nota1: 6,
-    nota2: 8
+    score1: 6,
+    score2: 8
 }
 ]
 
-let media = (nota1, nota2) => (nota1 + nota2) / 2;
+let average = (score1, score2) => (score1 + score2) / 2;
 
 for(let i = 0; i < students.length; i++) {
 
-    const scoreStudent = media(students[i].nota1, students[i].nota2)
+    const scoreStudent = average(students[i].score1, students[i].score2)
 
     if(scoreStudent >= 7) {
         alert(`A média do(a) aluno(a) ${students[i].name} é: ${scoreStudent}
